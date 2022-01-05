@@ -11,7 +11,7 @@ function App() {
   useEffect(() =>{
     const getMyNfts = async() => {
       const openseaData = await axios.get(
-        'Access-Control-Allow-Origin: https://testnets-api.opensea.io/assets?order_direction=asc&asset_contract_address=0x82dB810E06cd5936D467F43Ef6E8A686cFfE5aE9&format=api&order_direction=ascending'
+        'https://testnets.opensea.io/0x4463a5d91fd8fc0257157663e09285390d124165'
         )
       console.log(openseaData.data.assets)
       setpunkListData(openseaData.data.assets)
